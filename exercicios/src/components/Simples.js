@@ -12,8 +12,8 @@ import Padrao from '../styles/Padrao';
 
 export default props => [
     <Text key={1} style={Padrao.ex}>Arrow1: {props.texto1}</Text>,
-    <Text key={2} style={Padrao.ex}>Arrow2: {props.texto2}</Text>,
-    <Text key={3} style={Padrao.ex}>Arrow3: {props.texto3}</Text>
+    //<Text key={2} style={Padrao.ex}>Arrow2: {props.texto2}</Text>,
+    //<Text key={3} style={Padrao.ex}>Arrow3: {props.texto3}</Text>
 ]
 
 const styles = StyleSheet.create({
