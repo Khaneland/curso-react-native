@@ -1,0 +1,15 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+    ex: {
+        paddingHorizontal: 5,
+        marginVertical: 15,
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#222',
+        fontSize: 24,
+        fontWeight: 'bold'
+    }
+});
+
+export default styles;
