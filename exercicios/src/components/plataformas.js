@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Alert, ToastAndroid, Platform} from 'react-native';
+import { Button, Alert, ToastAndroid, Platform, View, StyleSheet} from 'react-native';
+import styles from '../styles/Padrao';
 
 export default props => {
     const notificar = msg => {
@@ -7,12 +8,14 @@ export default props => {
             ToastAndroid.show(msg, ToastAndroid.LONG)
         }
         else{
-            Alert.alert('Informação', msg);
+            Alert.alert('Informação', msg);   
         }
     }
 
     return (
-        <Button title='Plataforma ?' style={{paddingTop: 90}}
-            onPress={() => notificar('Parabens !')}/>
+        <View style={styles.ex}>
+            <Button title='Plataforma ?' style={{paddingTop: 90}}
+                onPress={() => notificar('Parabens !')}/>
+        </View>
     )
 }
